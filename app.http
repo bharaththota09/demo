@@ -1,0 +1,35 @@
+
+POST http://localhost:3000/register
+Content-Type: application/json
+
+{
+  "username":"nisha",
+  "password":"nisha@6"
+}
+
+###
+
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+  "username":"nisha",
+  "password":"nisha@6"
+}
+###
+
+GET http://localhost:3000/
+Authorization: bearer eyJhbGciOiJIUzI1NiJ9.TmlzaGE.oQ-jC7ujWYN2f17EVGzEvnzlUxWYv5xu_7Q5uhz2s7A
+
+###
+
+
+GET http://localhost:3000/3
+Authorization: bearer eyJhbGciOiJIUzI1NiJ9.Qmhh.ooJ1WJZYplYgQONio-l6ykdq5haCLuwkg6JbanEMtFU
+###
+GET http://localhost:3000/
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiJ9.Qmhh.ooJ1WJZYplYgQONio-l6ykdq5haCLuwkg6JbanEMtFU
+
+###
+GET http://localhost:3000/home
